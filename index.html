@@ -29,7 +29,8 @@
 </head>
 
 <body>
-    <div class="spinner" style="font-size: 255pt;">.</div>
+    <div class="spinner" style="font-size: 255pt;"></div>
+    <div style="font-size: 255pt;"> Loading ... </div>
     <script defer>
         (() => {
             const element = document.querySelector('.spinner');
@@ -42,9 +43,18 @@
                 "◴◷◶◵",
                 "◐◓◑◒",
                 "|/-\\",
+                " ⠁⠂⠄⡀⢀⠠⠐⠈",
+                "⡿⣟⣯⣷⣾⣽⣻⢿",
+                "oO@*@Oo.",
+                "♙♘♗♖♕♔",
+                "♟♞♝♜♛♚",
+                "♙♘♗♖♕♔♚♛♜♝♞♟",
+                "♙♟♘♞♗♝♖♜♕♛♔♚",
+                "♙♟♞♘♗♝♜♖♕♛♚♔",
             ];
             const n = Math.floor(Math.random() * spins.length);
-            const spin = spins[n];
+            // const spin = spins[n];
+            const spin = "♙♟♞♘♗♝♜♖♕♛♚♔";
             let i = 0;
 
             const interval = setInterval(() => {
