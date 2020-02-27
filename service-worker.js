@@ -10,7 +10,7 @@ self.addEventListener('install', (event) => {
     event.waitUntil(caches
         .open(cache_name)
         .then(cache => {
-            console.log('aaa');
+            console.log(cache, arguments);
             cache
                 .addAll([
                     `/chess/`,
@@ -22,14 +22,15 @@ self.addEventListener('install', (event) => {
                     `/chess/service-worker.js`,
                 ])
                 .then(() => {
+                    console.log(arguments);
                     self.skipWaiting()
                 })
-                .catch(error => {
-                    console.log('bbb');
+                .catch(() => {
+                    console.log(arguments);
                 });
         })
-        .catch(error => {
-            console.log('ccc');
+        .catch(() => {
+            console.log(arguments);
         }));
 });
 
