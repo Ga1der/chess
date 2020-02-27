@@ -2,17 +2,11 @@
 
 <head>
     <title>Chess</title>
-    <base href="./" />
-    <meta name="viewport" content="
-        width=device-width, 
-        user-scalable=no, 
-        initial-scale=1, 
-        minimum-scale=1, 
-        maximum-scale=5
-    " />
-    <meta name="theme-color" content="#1F1F1F" />
-    <link rel="icon" type="image/png" href="./icons-512.png" />
-    <link rel="manifest" href="./manifest.json" />
+    <base href="./">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=5">
+    <meta name="theme-color" content="#1F1F1F">
+    <link rel="icon" type="image/png" href="./icons-512.png">
+    <link rel="manifest" href="./manifest.json">
     <script>
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('./service-worker.js', {
@@ -25,13 +19,12 @@
         }
     </script>
     <link rel="stylesheet" type="text/css" href="./style.css">
-    <script defer src="./chess.js"></script>
 </head>
 
 <body>
     <div class="spinner" style="font-size: 255pt;"></div>
     <div style="font-size: 255pt;"> Loading ... </div>
-    <script defer>
+    <script>
         (() => {
             const element = document.querySelector('.spinner');
             const spins = [
@@ -64,6 +57,7 @@
             }, 1000 / 15);
         })();
     </script>
+    <script defer src="./chess.js"></script>
 </body>
 
 </html>
