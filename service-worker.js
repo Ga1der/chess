@@ -26,11 +26,11 @@ self.addEventListener('install', (event) => {
                     self.skipWaiting()
                 })
                 .catch((exception) => {
-                    console.log(exception);
+                    console.dir(exception);
                 });
         })
         .catch((exception) => {
-            console.log(exception);
+            console.dir(exception);
         }));
 });
 
