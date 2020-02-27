@@ -11,6 +11,6 @@
   "start_url": "/",
   "background_color": "#2F2F2F",
   "display": "standalone",
-  "scope": "/chess/",
+  "scope": "/",
   "theme_color": "#2F2F2F"
 }
