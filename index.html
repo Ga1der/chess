@@ -15,8 +15,8 @@
     <link rel="manifest" href="./manifest.json" />
     <script>
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('./service-worker.js', {
-                scope: './'
+            navigator.serviceWorker.register('service-worker.js', {
+                scope: '/'
             }).then((reg) => {
                 console.log('Registration succeeded. Scope is ' + reg.scope);
             }).catch((error) => {
@@ -26,6 +26,10 @@
     </script>
     <link rel="stylesheet" type="text/css" href="./style.css">
     <script defer src="./chess.js"></script>
+</head>
+
+<body>
+    <div class="spinner" style="font-size: 255pt;">&nbsp;</div>
     <script defer>
         (() => {
             const element = document.querySelector('.spinner');
@@ -50,10 +54,6 @@
             }, 1000 / 15);
         })();
     </script>
-</head>
-
-<body>
-    <div class="spinner" style="font-size: 255pt;">&nbsp;</div>
 </body>
 
 </html>
