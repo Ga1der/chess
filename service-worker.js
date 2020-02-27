@@ -7,7 +7,6 @@ const cache_name = `chess-${version}`;
 self.addEventListener('install', (event) => {
     console.dir('[SV install]', event, event.target);
     event.waitUntil(caches.open(cache_name).then(cache => cache.addAll([
-        `/`,
         `/chess/`,
         `/chess/index.html`,
         `/chess/manifest.json`,
