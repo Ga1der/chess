@@ -18,12 +18,13 @@
             });
         }
     </script>
+    <script defer src="./chess.js"></script>
     <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 
 <body>
     <div class="spinner" style="font-size: 255pt;"></div>
-    <div style="font-size: 255pt;"> Loading ... </div>
+    <div style="text-align: center;"> Loading ... </div>
     <script>
         (() => {
             const element = document.querySelector('.spinner');
@@ -57,7 +58,6 @@
             }, 1000 / 15);
         })();
     </script>
-    <script defer src="./chess.js"></script>
 </body>
 
 </html>
