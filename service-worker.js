@@ -19,7 +19,6 @@ self.addEventListener('install', (event) => {
                     `/chess/icons-512.png`,
                     `/chess/style.css`,
                     `/chess/chess.js`,
-                    `/chess/service-worker.js`,
                 ])
                 .then(function () {
                     console.log(arguments);
