@@ -3,17 +3,11 @@
  */
 self.addEventListener('install', event => {
     console.dir('[SV install]', event, event.target);
-    // event.waitUntil(
-    //     caches.open('airhorner').then(cache => {
-    //         return cache.addAll([
-    //             '/',
-    //             '/?utm_source=homescreen',
-    //             '/Home/About',
-    //             '/Home/Index',
-    //             '/Home/Contact'
-    //         ]).then(() => self.skipWaiting());
-    //     })
-    // );
+    event.waitUntil(caches.open('airhorner').then(cache => cache.addAll([
+        '/',
+        '/chess.js',
+        '/style.css',
+    ]).then(() => self.skipWaiting())));
 });
 
 /**
