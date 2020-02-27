@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    position: relative;
+    background-color: #1F1F1F;
+    color: #0F0F0F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table {
+    /* width: 100vh; */
+    /* height: 100vh; */
+}
+
+table th,
+table td {
+    width: calc(56vh/8);
+    height: calc(56vh/8);
+    font-size: 5vh;
+}
