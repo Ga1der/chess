@@ -9,8 +9,8 @@ self.addEventListener('install', (event) => {
 
     event.waitUntil(caches
         .open(cache_name)
-        .then(function (cache) {
-            console.log(cache, arguments);
+        .then((cache) => {
+            console.log(cache);
             cache
                 .addAll([
                     `/chess/`,
@@ -25,12 +25,12 @@ self.addEventListener('install', (event) => {
                     console.log(arguments);
                     self.skipWaiting()
                 })
-                .catch(function () {
-                    console.log(arguments);
+                .catch((exception) => {
+                    console.log(exception);
                 });
         })
-        .catch(function () {
-            console.log(arguments);
+        .catch((exception) => {
+            console.log(exception);
         }));
 });
 
