@@ -26,13 +26,7 @@
     </script>
     <link rel="stylesheet" type="text/css" href="./style.css">
     <script defer src="./chess.js"></script>
-</head>
-
-<body>
-    <div class="spinner" style="font-size: 255pt;">
-        Loading ...
-    </div>
-    <script>
+    <script defer>
         (() => {
             const element = document.querySelector('.spinner');
             const spins = [
@@ -56,6 +50,10 @@
             }, 1000 / 15);
         })();
     </script>
+</head>
+
+<body>
+    <div class="spinner" style="font-size: 255pt;">&nbsp;</div>
 </body>
 
 </html>
