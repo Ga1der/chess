@@ -13,12 +13,13 @@ self.addEventListener('install', (event) => {
             console.log(cache);
             cache
                 .addAll([
-                    // `/chess/`,
-                    // `/chess/index.html`,
-                    // `/chess/manifest.json`,
-                    // `/chess/icons-512.png`,
-                    // `/chess/style.css`,
-                    // `/chess/chess.js`,
+                    `/chess/`,
+                    `/chess/index.html`,
+                    `/chess/preload.html`,
+                    `/chess/manifest.json`,
+                    `/chess/icons-512.png`,
+                    `/chess/style.css`,
+                    `/chess/chess.js`,
                 ])
                 .then(function () {
                     console.log(arguments);
