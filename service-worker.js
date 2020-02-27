@@ -4,12 +4,12 @@
 self.addEventListener('install', event => {
     console.dir('[SV install]', event, event.target);
     event.waitUntil(caches.open('airhorner').then(cache => cache.addAll([
-        '/',
-        '/manifest.json',
-        '/icons-512.png',
-        '/style.css',
-        '/chess.js',
-        '/service-worker.js',
+        '/chess/',
+        '/chess/manifest.json',
+        '/chess/icons-512.png',
+        '/chess/style.css',
+        '/chess/chess.js',
+        '/chess/service-worker.js',
     ]).then(() => self.skipWaiting())));
 });
 
@@ -30,9 +30,9 @@ self.addEventListener('fetch', event => {
     //     caches.add();
     //     return response;
     // });
-    // event.respondWith(
-    //     caches
-    //         .match(event.request)
-    //         .then(response => response || fetch(event.request))
-    // );
+    event.respondWith(
+        caches
+            .match(event.request)
+            .then(response => response || fetch(event.request))
+    );
 });
