@@ -23,4 +23,5 @@ table td {
     width: calc(56vh/8);
     height: calc(56vh/8);
     font-size: 5vh;
+    cursor: pointer;
 }
