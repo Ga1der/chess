@@ -2,15 +2,15 @@
 
 <head>
     <title>Chess</title>
-    <base href="./chess/" />
+    <base href="./" />
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <link rel="icon" type="image/png" href="./icons-512.png" />
     <link rel="manifest" href="./manifest.json" />
     <script>
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/tv/service-worker.js', {
-                scope: '/tv/'
+            navigator.serviceWorker.register('./service-worker.js', {
+                scope: './'
             }).then((reg) => {
                 // регистрация сработала
                 console.log('Registration succeeded. Scope is ' + reg.scope);
