@@ -5,8 +5,11 @@ self.addEventListener('install', event => {
     console.dir('[SV install]', event, event.target);
     event.waitUntil(caches.open('airhorner').then(cache => cache.addAll([
         '/',
-        '/chess.js',
+        '/manifest.json',
+        '/icons-512.png',
         '/style.css',
+        '/chess.js',
+        '/service-worker.js',
     ]).then(() => self.skipWaiting())));
 });
 
