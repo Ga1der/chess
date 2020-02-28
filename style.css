@@ -18,12 +18,10 @@ table {
     /* height: 100vh; */
 }
 
-table th,
-table td {
+table th, table td {
     width: calc(56vh/8);
     height: calc(56vh/8);
     font-size: 5vh;
-    cursor: pointer;
 }
 
 .c1 {
@@ -36,4 +34,9 @@ table td {
 
 .c3 {
     background-color: #F0E0F0;
+}
+
+.p9812, .p9813, .p9814, .p9815, .p9816, .p9817 {
+    cursor: pointer;
+    color: wheat;
 }
