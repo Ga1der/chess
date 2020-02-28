@@ -25,3 +25,15 @@ table td {
     font-size: 5vh;
     cursor: pointer;
 }
+
+.c1 {
+    background-color: #10E0F0;
+}
+
+.c2 {
+    background-color: #20E0F0;
+}
+
+.c3 {
+    background-color: #F0E0F0;
+}
