@@ -38,5 +38,9 @@ table th, table td {
 
 .p9812, .p9813, .p9814, .p9815, .p9816, .p9817 {
     cursor: pointer;
-    color: wheat;
+    color: white;
+}
+
+.p9818, .p9819, .p9820, .p9821, .p9822, .p9832 {
+    color: black;
 }
