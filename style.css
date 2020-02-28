@@ -25,14 +25,17 @@ table th, table td {
 }
 
 .c1 {
+    /* lite */
     background-color: rgba(155, 0, 0, .9);
 }
 
 .c2 {
-    background-color: rgba(155, 0, 0, .5);
+    /* dark */
+    background-color: rgba(155, 0, 0, .9);
 }
 
 .c3 {
+    /* picked */
     background-color: rgba(255, 55, 55, .9);
 }
 
