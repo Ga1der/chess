@@ -16,5 +16,5 @@ z?l[61+G]:49;do{R=I[T+=l[C]];g=D=G|T+a-e?0:e;if(!R&&(G||A<3||g)||(1+R&z^c)>9&&G
 ]=I[g];D?I[g]=G?0:9^c:0}if(L>N||!h&L==N&&Math.random()<.5)if(N=L,S>1)if(h?s-L<0
 :(B=O,b=T,0))return N}}}while(!R&G>2||(T=O,G|A>2|z<o&!R&&++C*--A))}return-K+
 768<N|d&&N}function W(){i="<table>";for(u=18;u<98;document.body.innerHTML=i+=++
-u%x-9?"<th onclick='I[b="+u+"]&8?W():X(0,0,y,1)'bgcolor='#"+(u-B?u*.9&1||9:'F')+
+u%x-9?"<th onclick='I[b="+u+"]&8?W():X(0,0,y,1)'class='c"+(u-B?u*.9&1||2:3)+" p"+(I[u]&15?9808+l[67+(I[u]&15)]:160)+"'bgcolor='#"+(u-B?u*.9&1||9:'F')+
 "0E0F0'>&#"+(I[u]&15?9808+l[67+(I[u]&15)]:160)+";":u++&&"<tr>")B=b}W()
