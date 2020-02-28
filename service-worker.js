@@ -38,7 +38,7 @@ self.addEventListener('install', (event) => {
  */
 self.addEventListener('activate', (event) => {
     console.dir('[SV activate]', event, event.target);
-    // event.waitUntil(self.clients.claim());
+    event.waitUntil(self.clients.claim());
 });
 
 /**
@@ -46,7 +46,7 @@ self.addEventListener('activate', (event) => {
  */
 self.addEventListener('fetch', (event) => {
     console.dir('[SV fetch]', event, event.target);
-    // event.respondWith(caches.open(cache_name)
-    //     .then(cache => cache.match(event.request, { ignoreSearch: true }))
-    //     .then(response => response || fetch(event.request)));
+    event.respondWith(caches.open(cache_name)
+        .then(cache => cache.match(event.request, { ignoreSearch: true }))
+        .then(response => response || fetch(event.request)));
 });
