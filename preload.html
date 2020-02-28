@@ -2,12 +2,10 @@
 
 <head>
     <title>Chess</title>
-    <base href="./">
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=5">
     <meta name="theme-color" content="#1F1F1F">
     <link rel="icon" type="image/png" href="icons-512.png">
-    <link rel="stylesheet" type="text/css" href="style.css">
     <style>
         * {
             box-sizing: border-box;
@@ -17,7 +15,7 @@
 
         body {
             position: relative;
-            background-color: #1F1F1F;
+            background-color: #3F3F3F;
             color: #0F0F0F;
             display: flex;
             align-items: center;
@@ -28,7 +26,6 @@
 
 <body>
     <div class="spinner" style="font-size: 255pt;"></div>
-    <div style="text-align: center;"> Loading ... </div>
     <script defer>
         (() => {
             const element = document.querySelector('.spinner');
