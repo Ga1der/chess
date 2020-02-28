@@ -25,15 +25,15 @@ table th, table td {
 }
 
 .c1 {
-    background-color: #10E0F0;
+    background-color: rgba(155, 0, 0, .9);
 }
 
 .c2 {
-    background-color: #90E0F0;
+    background-color: rgba(155, 0, 0, .5);
 }
 
 .c3 {
-    background-color: #F0E0F0;
+    background-color: rgba(255, 55, 55, .9);
 }
 
 .p9812, .p9813, .p9814, .p9815, .p9816, .p9817 {
