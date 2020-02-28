@@ -38,7 +38,7 @@ self.addEventListener('install', (event) => {
  */
 self.addEventListener('activate', (event) => {
     console.dir('[SV activate]', event, event.target);
-    event.waitUntil(self.clients.claim());
+    // event.waitUntil(self.clients.claim());
 });
 
 /**
