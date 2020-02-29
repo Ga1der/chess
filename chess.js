@@ -54,7 +54,6 @@ function W() {
     i = "<table>";
     for (let u = 18; u < 98;) {
         ++u;
-        const onclick = `I[b=${u}] & 8 ? W() : X(0,0,y,1)`;
         const n_in_8_by_2_greed = I[u] & 15;
         const ascii_code_of_peace = 9808 + l[67 + n_in_8_by_2_greed];
         const ascii_code_on_cell = n_in_8_by_2_greed ? ascii_code_of_peace : 160;
@@ -62,6 +61,7 @@ function W() {
         const color_id_of_cell_picked = u - B ? color_id_of_cell_base : 3;
         console.info(u, u * .9, u * .9 & 1 || 2);
         console.log(u, B, u * .9, I[u], n_in_8_by_2_greed, ascii_code_of_peace, ascii_code_on_cell, color_id_of_cell_picked);
+        const onclick = `I[b=${u}] & 8 ? W() : X(0,0,y,1)`;
         const th = `<th onclick="${onclick}" class="c${color_id_of_cell_picked} p${ascii_code_on_cell}">&#${ascii_code_on_cell};</th>`;
         document.body.innerHTML = i += u % x - 9
             ? th
