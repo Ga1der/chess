@@ -1,0 +1,45 @@
+{
+    "method": "post",
+    "url": "https://ga1der.github.io/data/",
+    "headres": {
+        "Acept-Content": "application/json"
+    },
+    "get": {
+        "id": 1,
+        "limit": 9,
+        "order": {
+            "color": "desc",
+            "peace": "asc"
+        }
+    },
+    "post": {
+        "name_key": "value"
+    },
+    "files": {
+        "name_key": "@file.path"
+    },
+    "expect": [
+        {
+            "name": "string",
+            "value": "integer",
+            "place": "integer|null"
+        }
+    ],
+    "errors": [
+        {
+            "type": "BadRequestException",
+            "code": 400,
+            "message": "some message"
+        },
+        {
+            "type": "NotFoundException",
+            "code": 404,
+            "message": "some message"
+        },
+        {
+            "type": "ErrorException",
+            "code": 500,
+            "message": "some message"
+        }
+    ]
+}
